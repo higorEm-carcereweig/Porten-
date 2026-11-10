@@ -1,478 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Propriedades da Luz</title>
-
+    <meta name="theme-color" content="#17251e">
+    <meta name="description" content="Um guia visual sobre a barata-sibilante-de-Madagascar, suas características, seu chiado e sua importância ecológica.">
+    <title>Baratas: de praga à solução</title>
+    <link rel="preconnect" href="https://upload.wikimedia.org">
+    <link rel="preconnect" href="https://encrypted-tbn0.gstatic.com">
+    <link rel="preconnect" href="https://preview.redd.it">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <div class="progresso-leitura" aria-hidden="true"><span id="barra-progresso"></span></div>
 
-    <!-- CABEÇALHO -->
-
-    <header>
-
-        <img src="imagens/optica.jpg" alt="Imagem de Óptica" class="imagem-topo">
-
-        <div class="cabecalho">
-
-            <h1>PROPRIEDADES DA LUZ</h1>
-
-            <p>Projeto de Física - Óptica Geométrica</p>
-
+    <header id="topo">
+        <div class="hero">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Hissing_cockroach_gromphadorhina_portentosa.jpg/960px-Hissing_cockroach_gromphadorhina_portentosa.jpg"
+                alt="Barata-sibilante-de-Madagascar sobre o solo da floresta"
+                class="imagem-topo"
+                fetchpriority="high"
+            >
+            <div class="hero-sombra" aria-hidden="true"></div>
+            <div class="cabecalho">
+                <span class="etiqueta">BIOLOGIA <span aria-hidden="true">✳</span> BIODIVERSIDADE <span aria-hidden="true">✳</span> ECOLOGIA</span>
+                <h1>BARATAS:<br><em>DE PRAGA À SOLUÇÃO</em></h1>
+                <p>Uma pequena exploradora do mundo natural — e muito mais interessante do que sua fama sugere.</p>
+                <a class="botao-destaque" href="#inicio">Entrar na floresta <span aria-hidden="true">↓</span></a>
+            </div>
+            <p class="credito-imagem">Foto: Charles J. Sharp / Wikimedia Commons · CC BY-SA 3.0</p>
+            <span class="hero-numero" aria-hidden="true">01 — ESPÉCIE</span>
         </div>
 
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#conceito">Óptica Geométrica</a>
-            <a href="#propriedades">Propriedades</a>
-            <a href="#reflexao">Reflexão</a>
-            <a href="#aplicacoes">Aplicações</a>
-            <a href="#quiz">Quiz</a>
-            <a href="#equipe">Equipe</a>
+        <nav class="menu-principal" aria-label="Navegação principal">
+            <div class="menu-links">
+                <a href="#inicio">Início</a>
+                <a href="#especie">A espécie</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#chiado">O chiado</a>
+                <a href="#ecologia">Ecologia</a>
+                <a href="#solucao">A solução</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#equipe">Equipe</a>
+            </div>
+            <div class="controles-leitura" role="group" aria-label="Preferências de visualização">
+                <button type="button" id="diminuir-texto" class="controle" aria-label="Diminuir tamanho do texto" title="Diminuir texto">A−</button>
+                <button type="button" id="aumentar-texto" class="controle" aria-label="Aumentar tamanho do texto" title="Aumentar texto">A+</button>
+                <button type="button" id="alternar-tema" class="controle controle-tema" aria-pressed="false">☾ <span>Modo escuro</span></button>
+                <button type="button" id="alternar-contraste" class="controle" aria-pressed="false" title="Alternar contraste reforçado">◐ <span class="texto-contraste">Contraste</span></button>
+            </div>
         </nav>
-
     </header>
 
-
-    <!-- CONTEÚDO -->
-
-    <main>
-
-        <!-- INTRODUÇÃO -->
-
+    <main id="conteudo">
         <section id="inicio" class="introducao">
-
-            <h2>🔦 A luz está em todos os lugares!</h2>
-
+            <p class="rotulo-secao">01 / MUITO ALÉM DA FAMA</p>
+            <h2>Nem toda barata é uma praga urbana.</h2>
             <p>
-                A luz está presente em praticamente tudo que observamos
-                no nosso cotidiano. Ela permite enxergarmos objetos,
-                pessoas e ambientes e também está presente em diversas
-                tecnologias.
+                Quando ouvimos a palavra “barata”, é comum pensar em sujeira e infestação.
+                Mas a natureza é bem mais interessante do que esse estereótipo. A barata-sibilante-de-Madagascar
+                é uma espécie sem asas que vive no solo das florestas e tem um mecanismo de defesa muito curioso:
+                ela consegue produzir um chiado audível.
             </p>
-
-            <p>
-                Neste site vamos conhecer algumas das principais
-                propriedades da luz e compreender como elas explicam
-                fenômenos presentes no nosso dia a dia.
-            </p>
-
-        </section>
-
-
-        <!-- ÓPTICA GEOMÉTRICA -->
-
-        <section id="conceito">
-
-            <h2>📚 O que é Óptica Geométrica?</h2>
-
-            <p>
-                A Óptica Geométrica é a área da Física que estuda as
-                propriedades da luz utilizando uma abordagem geométrica
-                e simplificada.
-            </p>
-
-            <p>
-                Nesse modelo, a luz é representada por
-                <strong>raios de luz</strong>, que são segmentos de reta
-                utilizados para indicar a direção e o sentido de
-                propagação da luz.
-            </p>
-
             <div class="destaque">
-
-                <strong>💡 Ideia principal:</strong>
-
-                <p>
-                    Na Óptica Geométrica, podemos representar a trajetória
-                    da luz por meio de raios.
-                </p>
-
+                <strong>✳ A ideia principal</strong>
+                <p>Conhecer a espécie ajuda a separar um problema doméstico de um animal que desempenha um papel importante no ecossistema.</p>
             </div>
-
+            <div class="pílulas-resumo" aria-label="Resumo da espécie">
+                <span>Inseto</span><span>Sem asas</span><span>Originária de Madagascar</span><span>Detritívora</span>
+            </div>
         </section>
 
+        <section id="especie">
+            <p class="rotulo-secao">02 / FICHA DA ESPÉCIE</p>
+            <div class="titulo-complemento">
+                <div>
+                    <h2>Quem é a barata de Madagascar?</h2>
+                    <p>
+                        Seu nome científico é <em>Gromphadorhina portentosa</em>. Originária de Madagascar,
+                        essa barata tem corpo oval e brilhante, coloração castanha e não possui asas.
+                        Os machos apresentam saliências parecidas com chifres, usadas em disputas com outros machos.
+                    </p>
+                </div>
+                <span class="selo-cientifico">GUIA<br>DE CAMPO<br><b>№ 01</b></span>
+            </div>
+            <div class="cards cards-ficha">
+                <article class="card"><span class="icone-card" aria-hidden="true">⌬</span><h3>Nome científico</h3><p><em>Gromphadorhina portentosa</em>, um inseto do grupo das baratas.</p></article>
+                <article class="card"><span class="icone-card" aria-hidden="true">↔</span><h3>Tamanho</h3><p>Geralmente mede cerca de 5 a 7,5 cm quando adulta.</p></article>
+                <article class="card"><span class="icone-card" aria-hidden="true">◷</span><h3>Longevidade</h3><p>Na natureza, pode viver aproximadamente de 2 a 5 anos.</p></article>
+                <article class="card"><span class="icone-card" aria-hidden="true">♧</span><h3>Habitat</h3><p>Prefere o chão da floresta, entre folhas caídas, madeira e outros restos orgânicos.</p></article>
+            </div>
+        </section>
 
-        <!-- FONTES DE LUZ -->
+        <section id="galeria" class="secao-galeria">
+            <p class="rotulo-secao">03 / OBSERVAÇÃO EM DETALHE</p>
+            <h2>Olha só essas carinhas.</h2>
+            <p class="texto-intro-galeria">Três registros para observar de perto o tamanho, os filhotes e a personalidade visual dessa espécie. Clique em uma foto para ampliar.</p>
+            <div class="galeria">
+                <figure class="foto foto-grande">
+                    <button class="abrir-foto" type="button" data-imagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz2EzRTxCt2Rn4ZE2P6YbWMVuSCS_XL6ti00NMiwRjUQ&s=10" data-legenda="Uma barata-sibilante sobre a mão de uma pessoa — uma referência visual para perceber seu tamanho." aria-label="Ampliar foto da barata sobre uma mão">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz2EzRTxCt2Rn4ZE2P6YbWMVuSCS_XL6ti00NMiwRjUQ&s=10" alt="Barata de Madagascar apoiada sobre a palma de uma mão, mostrando sua escala" loading="lazy">
+                        <span class="zoom-foto" aria-hidden="true">↗ Ampliar</span>
+                    </button>
+                    <figcaption><span>01 — ESCALA</span> Pequena? Nem tanto. O corpo pode chegar a vários centímetros.</figcaption>
+                </figure>
+                <figure class="foto">
+                    <button class="abrir-foto" type="button" data-imagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKEk2S9Cch-nx0CdGY3-00-Ci1EWD8fTS5Uetb90OFFSrr384F5P4mP7TJ&s=10" data-legenda="Ninfas recém-nascidas junto ao corpo da fêmea — a espécie apresenta nascimento de filhotes vivos." aria-label="Ampliar foto das ninfas recém-nascidas">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKEk2S9Cch-nx0CdGY3-00-Ci1EWD8fTS5Uetb90OFFSrr384F5P4mP7TJ&s=10" alt="Pequenas ninfas claras agrupadas junto ao corpo de uma barata adulta" loading="lazy">
+                        <span class="zoom-foto" aria-hidden="true">↗ Ampliar</span>
+                    </button>
+                    <figcaption><span>02 — CICLO DE VIDA</span> As ninfas são bem diferentes dos adultos quando acabam de nascer.</figcaption>
+                </figure>
+                <figure class="foto foto-pollux">
+                    <button class="abrir-foto" type="button" data-imagem="https://preview.redd.it/esse-%C3%A9-o-pollux-minha-barata-de-madagascar-3-v0-fj2po6u7d3sf1.jpg?width=640&crop=smart&auto=webp&s=77d58c90e663db9841eb309cac02b53af0ba0540" data-legenda="Pollux, a barata-de-Madagascar apresentada por u/CucumberEasy3243 na comunidade r/insetos." aria-label="Ampliar foto do Pollux, compartilhada no Reddit">
+                        <img src="https://preview.redd.it/esse-%C3%A9-o-pollux-minha-barata-de-madagascar-3-v0-fj2po6u7d3sf1.jpg?width=640&crop=smart&auto=webp&s=77d58c90e663db9841eb309cac02b53af0ba0540" alt="Pollux, uma barata de Madagascar de estimação, fotografada de perto" loading="lazy">
+                        <span class="zoom-foto" aria-hidden="true">↗ Ampliar</span>
+                    </button>
+                    <figcaption><span>03 — POLLUX 🧡</span> Um registro compartilhado por <a href="https://www.reddit.com/r/insetos/comments/1ntft1q/esse_%C3%A9_o_pollux_minha_baratademadagascar_3/" target="_blank" rel="noopener noreferrer">u/CucumberEasy3243 no r/insetos</a>.</figcaption>
+                </figure>
+            </div>
+            <p class="nota-imagens">As duas primeiras imagens foram inseridas a partir dos links enviados para este projeto. A terceira pertence à publicação original do Pollux no Reddit.</p>
+        </section>
 
-        <section>
-
-            <h2>☀️ Fontes de luz</h2>
-
+        <section id="chiado">
+            <p class="rotulo-secao">04 / UM SOM INCOMUM</p>
+            <h2>Por que ela chia?</h2>
             <p>
-                Podemos classificar as fontes de luz em dois grupos
-                principais.
+                Ao contrário de muitos insetos que fazem barulho esfregando partes do corpo, a barata-sibilante
+                expulsa ar por aberturas do sistema respiratório chamadas <strong>espiráculos</strong>.
+                O som pode ter diferentes funções, dependendo da situação.
             </p>
+            <div class="cards cards-chiado">
+                <article class="card card-escura"><span class="numero-card">01</span><h3>Alerta e defesa</h3><p>O chiado pode assustar quem se aproxima e ajudar o inseto a reagir diante de uma ameaça.</p></article>
+                <article class="card card-escura"><span class="numero-card">02</span><h3>Reprodução</h3><p>Os machos também usam chiados durante o comportamento de acasalamento.</p></article>
+                <article class="card card-escura"><span class="numero-card">03</span><h3>Disputas</h3><p>Em confrontos entre machos, o som pode acompanhar empurrões e demonstrações de força.</p></article>
+            </div>
+            <div class="destaque destaque-cobre"><strong>Curiosidade científica</strong><p>Ela não precisa de cordas vocais para “falar”: o chiado é produzido usando o próprio sistema respiratório.</p></div>
+        </section>
 
+        <section id="ecologia">
+            <p class="rotulo-secao">05 / TRABALHO DE BASTIDORES</p>
+            <h2>Pequena recicladora da floresta</h2>
+            <p>
+                Essa espécie alimenta-se principalmente de frutas e materiais vegetais. Também faz parte do grupo
+                de animais detritívoros: organismos que consomem matéria orgânica em decomposição. Esse trabalho
+                contribui para a reciclagem de nutrientes e para o funcionamento do ecossistema.
+            </p>
+            <div class="linha-ecologica">
+                <div class="etapa-ecologica"><span>01</span><h3>Restos orgânicos</h3><p>Folhas, frutos e outros materiais caem no chão da floresta.</p></div>
+                <div class="seta-ecologica" aria-hidden="true">→</div>
+                <div class="etapa-ecologica"><span>02</span><h3>Alimentação</h3><p>Detritívoros consomem parte desse material.</p></div>
+                <div class="seta-ecologica" aria-hidden="true">→</div>
+                <div class="etapa-ecologica"><span>03</span><h3>Nutrientes</h3><p>Os nutrientes voltam a circular no ambiente.</p></div>
+            </div>
+        </section>
+
+        <section id="solucao">
+            <p class="rotulo-secao">06 / MUDANDO A PERSPECTIVA</p>
+            <h2>De praga à solução: o que essa barata nos ensina?</h2>
+            <p>
+                A solução começa pelo conhecimento. A barata-sibilante-de-Madagascar não é a mesma coisa que uma
+                espécie que infesta cozinhas e despensas. No seu habitat natural, ela participa da decomposição
+                da matéria orgânica. Estudá-la também é uma maneira de despertar curiosidade científica e discutir
+                a importância de cada organismo na biodiversidade.
+            </p>
             <div class="cards">
-
-                <div class="card">
-
-                    <h3>🌞 Fontes primárias</h3>
-
-                    <p>
-                        São aquelas capazes de emitir sua própria luz.
-                    </p>
-
-                    <p>
-                        Exemplos: Sol, chama de uma vela e lâmpada acesa.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <h3>🌙 Fontes secundárias</h3>
-
-                    <p>
-                        São objetos que não produzem luz própria, mas
-                        refletem a luz que recebem de uma fonte primária.
-                    </p>
-
-                    <p>
-                        Exemplos: Lua, planetas e objetos ao nosso redor.
-                    </p>
-
-                </div>
-
+                <article class="card"><h3>Respeito à biodiversidade</h3><p>Um animal não precisa ser bonito ou popular para ter importância ecológica.</p></article>
+                <article class="card"><h3>Educação e pesquisa</h3><p>Observar seu comportamento permite estudar comunicação, adaptação e ciclos de vida.</p></article>
+                <article class="card"><h3>Reciclagem natural</h3><p>Ao consumir matéria orgânica, detritívoros ajudam a devolver nutrientes ao ecossistema.</p></article>
             </div>
-
+            <div class="aviso"><strong>Importante:</strong> valorizar essa espécie não significa soltá-la em ambientes onde não é nativa. Animais silvestres devem ser respeitados e não devem ser introduzidos em novos ecossistemas.</div>
         </section>
 
-
-        <!-- PROPRIEDADES -->
-
-        <section id="propriedades">
-
-            <h2>🔬 Propriedades da luz</h2>
-
-            <p>
-                A luz apresenta diferentes propriedades que ajudam a
-                explicar diversos fenômenos ópticos.
-            </p>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <h3>1️⃣ Propagação retilínea</h3>
-
-                    <p>
-                        Em meios homogêneos e transparentes, a luz se
-                        propaga em linha reta.
-                    </p>
-
-                    <p>
-                        A formação de sombras e os eclipses são exemplos
-                        relacionados a essa propriedade.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <h3>2️⃣ Independência dos raios</h3>
-
-                    <p>
-                        Quando dois ou mais raios de luz se cruzam,
-                        a propagação de um não interfere na propagação
-                        do outro.
-                    </p>
-
-                    <p>
-                        Um exemplo pode ser observado em shows de luzes,
-                        quando diferentes feixes se cruzam.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <h3>3️⃣ Reversibilidade</h3>
-
-                    <p>
-                        A trajetória de um raio de luz não depende do
-                        sentido da sua propagação.
-                    </p>
-
-                    <p>
-                        O caminho de ida pode ser exatamente igual ao
-                        caminho de volta.
-                    </p>
-
-                </div>
-
-            </div>
-
+        <section class="curiosidade-secao">
+            <p class="rotulo-secao">07 / VOCÊ SABIA?</p>
+            <h2>O nascimento também é diferente</h2>
+            <div class="curiosidade"><span class="curiosidade-selo" aria-hidden="true">✳</span><p>A fêmea forma uma cápsula de ovos chamada <strong>ooteca</strong> e a mantém dentro do corpo. Depois, dá à luz ninfas vivas — podendo chegar a dezenas de filhotes em uma ninhada.</p></div>
         </section>
-
-
-        <!-- REFLEXÃO -->
-
-        <section id="reflexao">
-
-            <h2>🪞 Reflexão da luz</h2>
-
-            <p>
-                Quando a luz encontra a superfície de um material,
-                ela pode ser reemitida para o meio de origem.
-                Esse fenômeno é chamado de <strong>reflexão</strong>.
-            </p>
-
-            <div class="destaque">
-
-                <strong>📌 Exemplo:</strong>
-
-                <p>
-                    Quando a luz atinge um espelho, ela é refletida
-                    e pode chegar aos nossos olhos, permitindo que
-                    vejamos nossa imagem.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- RETA NORMAL -->
-
-        <section>
-
-            <h2>📐 A reta normal</h2>
-
-            <p>
-                A reta normal é uma linha imaginária perpendicular,
-                formando um ângulo de 90°, à superfície no ponto onde
-                a luz incide.
-            </p>
-
-            <p>
-                Os ângulos de incidência e reflexão são medidos em
-                relação à reta normal, e não em relação à superfície.
-            </p>
-
-        </section>
-
-
-        <!-- LEIS DA REFLEXÃO -->
-
-        <section>
-
-            <h2>📜 Leis da reflexão</h2>
-
-            <div class="lei">
-
-                <h3>1ª Lei da Reflexão</h3>
-
-                <p>
-                    O raio incidente, a reta normal e o raio refletido
-                    pertencem ao mesmo plano.
-                </p>
-
-            </div>
-
-
-            <div class="lei">
-
-                <h3>2ª Lei da Reflexão</h3>
-
-                <p>
-                    O ângulo de incidência é igual ao ângulo de reflexão.
-                </p>
-
-                <div class="formula-caixa">
-
-                    <p>θᵢ = θᵣ</p>
-
-                </div>
-
-                <p>
-                    Portanto, se um raio incide com um determinado
-                    ângulo em relação à normal, ele será refletido
-                    com o mesmo ângulo.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- REFLEXÃO REGULAR E DIFUSA -->
-
-        <section>
-
-            <h2>✨ Tipos de reflexão</h2>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <h3>🪞 Reflexão regular</h3>
-
-                    <p>
-                        Ocorre em superfícies lisas, como espelhos.
-                        Os raios são refletidos de maneira organizada.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <h3>🔳 Reflexão difusa</h3>
-
-                    <p>
-                        Ocorre quando a luz atinge uma superfície
-                        irregular ou rugosa e é refletida em várias
-                        direções.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- APLICAÇÕES -->
-
-        <section id="aplicacoes">
-
-            <h2>🌎 Aplicações no cotidiano</h2>
-
-            <p>
-                As propriedades da luz estão presentes em diversas
-                situações do nosso cotidiano.
-            </p>
-
-            <ul>
-
-                <li>🪞 Espelhos e retrovisores.</li>
-
-                <li>🔦 Lanternas e feixes de luz.</li>
-
-                <li>🌑 Formação de sombras.</li>
-
-                <li>🌎 Eclipses.</li>
-
-                <li>🎆 Shows e espetáculos de luz.</li>
-
-                <li>♿ Sistemas de sinalização e acessibilidade.</li>
-
-            </ul>
-
-            <div class="destaque">
-
-                <strong>♿ Física e acessibilidade</strong>
-
-                <p>
-                    O estudo da interação da luz com as superfícies
-                    também é importante para criar sinalizações que
-                    facilitem a identificação de obstáculos e saídas
-                    por pessoas com baixa visão ou daltonismo.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- CURIOSIDADE -->
-
-        <section>
-
-            <h2>💡 Você sabia?</h2>
-
-            <div class="curiosidade">
-
-                <p>
-                    Duas pessoas podem olhar para o mesmo espelho e
-                    conseguir enxergar uma à outra. Isso está relacionado
-                    ao princípio da reversibilidade dos raios de luz.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- QUIZ -->
 
         <section id="quiz" class="quiz">
-
-            <h2>🧠 Teste seus conhecimentos!</h2>
-
-            <p>
-                Durante um show, dois feixes de laser se cruzam.
-                Depois do cruzamento, cada feixe continua seguindo
-                sua trajetória normalmente.
-            </p>
-
-            <p>
-                Qual propriedade da luz explica esse fenômeno?
-            </p>
-
-            <button onclick="responder('A')">
-                A) Propagação retilínea
-            </button>
-
-            <button onclick="responder('B')">
-                B) Reversibilidade
-            </button>
-
-            <button onclick="responder('C')">
-                C) Independência dos raios
-            </button>
-
-            <button onclick="responder('D')">
-                D) Reflexão total
-            </button>
-
-            <p id="resposta"></p>
-
+            <p class="rotulo-secao">08 / TESTE SEUS CONHECIMENTOS</p>
+            <h2>Hora do desafio!</h2>
+            <p class="pergunta">Como a barata-sibilante-de-Madagascar produz seu chiado característico?</p>
+            <div class="opcoes-quiz">
+                <button type="button" data-alternativa="A">A) Esfregando as asas uma na outra.</button>
+                <button type="button" data-alternativa="B">B) Batendo as patas no chão.</button>
+                <button type="button" data-alternativa="C">C) Expulsando ar pelos espiráculos respiratórios.</button>
+                <button type="button" data-alternativa="D">D) Usando cordas vocais, como os humanos.</button>
+            </div>
+            <p id="resposta" class="feedback" role="status" aria-live="polite"></p>
+            <button id="reiniciar-quiz" class="botao-secundario" type="button" hidden>Tentar novamente</button>
         </section>
-
-
-        <!-- EQUIPE -->
 
         <section id="equipe">
-
-            <h2>👥 Nossa equipe</h2>
-
-            <div class="equipe">
-
-                <p>👤  TESTE </p>
-
-
-            </div>
-
+            <p class="rotulo-secao">09 / QUEM FEZ O PROJETO</p>
+            <h2>Nossa equipe</h2>
+            <div class="equipe"><p><span aria-hidden="true">✳</span> Isabella Pontes</p><p><span aria-hidden="true">✳</span> Higor Henrique</p></div>
         </section>
 
+        <section class="fontes">
+            <p class="rotulo-secao">REFERÊNCIAS E CRÉDITOS</p>
+            <h2>Para continuar explorando</h2>
+            <p>As informações e imagens deste site podem ser consultadas nas fontes abaixo:</p>
+            <ul>
+                <li><a href="https://www.nationalgeographic.com/animals/invertebrates/facts/madagascar-hissing-cockroach" target="_blank" rel="noopener noreferrer">National Geographic — Madagascar Hissing Cockroach</a></li>
+                <li><a href="https://kids.nationalgeographic.com/animals/invertebrates/facts/hissing-cockroach" target="_blank" rel="noopener noreferrer">National Geographic Kids — Hissing Cockroach</a></li>
+                <li>Foto do cabeçalho: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Hissing_cockroach_gromphadorhina_portentosa.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, licença <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</li>
+                <li>Foto do Pollux: <a href="https://www.reddit.com/r/insetos/comments/1ntft1q/esse_%C3%A9_o_pollux_minha_baratademadagascar_3/" target="_blank" rel="noopener noreferrer">u/CucumberEasy3243 — Reddit r/insetos</a>.</li>
+            </ul>
+        </section>
     </main>
 
-
-    <!-- RODAPÉ -->
-
     <footer>
-
-        <p>Projeto de Física - Propriedades da Luz</p>
-
-        <p>[Nome da escola] - 2026</p>
-
+        <p class="footer-titulo">BARATAS: DE PRAGA À SOLUÇÃO</p>
+        <p>Projeto de Biologia · 2026</p>
+        <a href="#topo">Voltar ao topo ↑</a>
     </footer>
 
-
-    <script src="script.js"></script>
-
+    <dialog id="visualizador" class="visualizador" aria-label="Visualizador de imagem">
+        <div class="visualizador-conteudo">
+            <button type="button" id="fechar-visualizador" class="fechar-visualizador" aria-label="Fechar imagem ampliada">✕</button>
+            <img id="imagem-ampliada" src="" alt="">
+            <p id="legenda-ampliada"></p>
+        </div>
+    </dialog>
 </body>
-
 </html>
-
